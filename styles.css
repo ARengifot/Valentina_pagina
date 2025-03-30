@@ -1,0 +1,74 @@
+body {
+    font-family: 'Parisienne', cursive;
+    background-color: #ffe6e6; /* Rosa suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#lyrics, #message {
+    font-size: 28px;
+    color: #cc0000; /* Rojo oscuro romántico */
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Transición suave */
+}
+.fade-image {
+    transition: opacity 1s ease;
+    opacity: 1;
+    width: 100%; /* O el tamaño deseado */
+    max-width: 500px; /* Ejemplo */
+    display: block;
+    margin: 0 auto;
+}
+#message {
+    font-size: 32px; /* Un poco más grande para destacar */
+}
+#playButton {
+    font-family: 'Parisienne', cursive; /* Necesitas incluir esta fuente vía Google Fonts */
+    font-size: 24px;
+    background-color: #ffcccc; /* Rosa suave */
+    color: #cc0000; /* Rojo oscuro */
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#message img {
+    max-width: 300px;
+    display: block;
+    margin: 10px auto;
+}
+/* Estilo para el contenedor final */
+#finalMessage {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Estilo para la foto de ustedes */
+  .couple-photo {
+    width: 300px; /* Ajusta el tamaño deseado */
+    max-width: 100%;
+    display: block;
+    margin: 10px auto 0;
+  }
+#playButton:hover {
+    background-color: #ff9999; /* Rosa más intenso */
+    transform: translate(-50%, -50%) scale(1.05); /* Leve agrandamiento */
+}
+/* Ajuste para móviles */
+@media (max-width: 600px) {
+    #lyrics, #message {
+        font-size: 20px;
+    }
+    #message {
+        font-size: 24px;
+    }
+}
